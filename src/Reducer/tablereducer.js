@@ -4,10 +4,11 @@ const initialState = {
 
 export default function tablereducer(state=initialState,action){
     const {type,payload} = action;
+
     switch(type){
-        case "SETTABLENUMBER":
+        case "SET_TABLE_NUMBER":
             return {...state,table_number:payload}
-        case "RESETTABLENUMBER":
+        case "RESET_TABLE_NUMBER":
             return {...state,table_number:null}
         default:
             return state
