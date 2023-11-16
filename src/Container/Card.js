@@ -1,16 +1,30 @@
 import React, { useEffect, useState } from 'react'
+import { connect } from 'react-redux';
 
-const Card = () => {
+const Card = ({filter_name}) => {
     const [data, setData] = useState([]);
+    const [cloneData, setCloneData] = useState([]);
+
     useEffect(() => {
         fetch('https://food-itema-default-rtdb.firebaseio.com/telugu-skillhub-api/-MsE8GfWtRjc8x_t8pCC.json').then(
             response => response.json()
         ).then(
             json => {
-                setData(json.items)
+                setData(json.items);
+                setCloneData(json.items);
             }
         )
-    },[])
+    },[]);
+
+    useEffect(() =>{
+        if(filter_name != "All Items"){
+            let specific = cloneData.filter(item => item.category === filter_name);
+            setData(specific);
+        }else{
+            setData(cloneData);
+        }
+    },[filter_name]);
+
   return (
     <div>
         <center>
@@ -42,4 +56,7 @@ const Card = () => {
   )
 }
 
-export default Card
+const mapStateToProps = state =>({
+    filter_name : state.filterreducer.filter_name,
+})
+export default connect(mapStateToProps)(Card)
