@@ -17,7 +17,7 @@ const Card = ({filter_name}) => {
     },[]);
 
     useEffect(() =>{
-        if(filter_name != "All Items"){
+        if(filter_name !== "All Items"){
             let specific = cloneData.filter(item => item.category === filter_name);
             setData(specific);
         }else{
