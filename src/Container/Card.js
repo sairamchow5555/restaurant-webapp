@@ -25,7 +25,7 @@ const Card = ({filter_name, addorder, table_number}) =>{
         else{
             setData(cloneData);
         }
-    },[filter_name]);
+    },[filter_name,cloneData]);
 
     const Handler = async (id, name, prize, url) =>{
         if(table_number !== null){
