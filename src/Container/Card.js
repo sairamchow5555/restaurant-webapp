@@ -30,8 +30,6 @@ const Card = ({filter_name, addorder, table_number}) =>{
     const Handler = async (id, name, prize, url) =>{
         if(table_number !== null){
             await addorder(id, name, prize, table_number, url);
-            resettablenumber();
-            resetfilter();
             alert("Order placed successfully.");
             await resettablenumber();
             await resetfilter();
