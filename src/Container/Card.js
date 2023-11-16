@@ -33,6 +33,9 @@ const Card = ({filter_name, addorder, table_number}) =>{
             resettablenumber();
             resetfilter();
             alert("Order placed successfully.");
+            await resettablenumber();
+            await resetfilter();
+            
         }
         else{
             alert("Select the TABLE NUMBER.!");
