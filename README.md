@@ -1,12 +1,12 @@
-#Home page
+# Home page
 ![Screenshot 2023-11-17 at 12 07 15 PM](https://github.com/sairamchow5555/restaurant-webapp/assets/126855559/0b4c3a9c-22e6-432f-96d5-c75198f3c7af)
 
 ![Screenshot 2023-11-17 at 12 07 03 PM](https://github.com/sairamchow5555/restaurant-webapp/assets/126855559/28140b19-0d42-4563-b920-cd19d5a35811)
 
-#Ordering food items
+# Ordering food items
 ![Screenshot 2023-11-17 at 12 07 42 PM](https://github.com/sairamchow5555/restaurant-webapp/assets/126855559/b3db9c2b-4083-431c-90eb-f7a4feb5c6ea)
 
-#Order list
+# Order list
 ![Screenshot 2023-11-17 at 12 07 53 PM](https://github.com/sairamchow5555/restaurant-webapp/assets/126855559/1189e2b5-60f2-41b9-b9c3-781ddd6a4897)
 
 
