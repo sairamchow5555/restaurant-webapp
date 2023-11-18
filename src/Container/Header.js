@@ -6,7 +6,7 @@ const Header = ({count}) => {
   return (
     <div>
         <nav className='navbar navbar-light bg-light'>
-            <h2 className='navbar-brand'>Restaurant</h2>
+            <Link to='/' className='navbar-brand'>Restaurant</Link>
             <button className='btn btn-primary'>
                 <Link to='/orders' style={{color:'white',textDecoration:'none'}}>Orders</Link> 
                 <span className='badge bg-danger'>{count}</span>
